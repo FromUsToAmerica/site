@@ -45,7 +45,7 @@
             margin-bottom: 4rem;
         }
 
-        /* The List */
+        /* The Manifest List */
         .manifest {
             display: grid;
             grid-template-columns: 1fr 1fr; 
@@ -155,14 +155,28 @@
             text-decoration: none;
         }
         .cta-link:hover { text-decoration: underline; }
+
+        /* FOOTER & DISCLAIMER */
         footer {
-            margin-top: 4rem;
-            border-top: 1px solid #f0f0f0;
+            margin-top: 5rem;
+            border-top: 1px solid #eee;
             padding-top: 2rem;
+            color: #888;
+        }
+        .copyright {
             font-size: 0.9rem;
+            margin-bottom: 1rem;
+            color: #222;
+        }
+        .disclaimer {
+            font-size: 0.8rem;
+            line-height: 1.4;
             color: #999;
         }
-        footer a { color: #999; text-decoration: none; }
+        .disclaimer a { color: #888; text-decoration: underline; }
+        footer a { color: #888; text-decoration: none; }
+        footer a:hover { color: #222; }
+
     </style>
 </head>
 <body>
@@ -179,19 +193,21 @@
 
     <div class="bill-of-lading">
         <ul class="manifest">
-            <li>Love, Community and Kids</li>
+            <li>Love, community and kids</li>
             <li>Leadership</li>
+            
             <li>Neighborhoods</li>
             <li>Citizenship</li>
+            
             <li>Housing</li>
             <li>Agency</li>
+            
             <li>Competence</li>
             <li>Energy</li>
+            
             <li>Prosperity</li>
             <li>Discovery</li>
         </ul>
-
-
 
         <div class="parcel-col">
             <img src="static/assets/misc/from_us_to_america_package.png" alt="A package sealed with American flag tape" class="parcel-img">
@@ -219,7 +235,13 @@
     </div>
 
     <footer>
-        &copy; 2026 From Us To America. <a href="https://github.com/fromustoamerica/site">Source</a>.
+        <div class="copyright">
+            &copy; 2026 From Us To America. <a href="https://github.com/fromustoamerica/site">Source</a>.
+        </div>
+        
+        <div class="disclaimer">
+            <p><strong>Status & Attribution:</strong> This project is an independent act of civic expression. It is not affiliated with, authorized by, or coordinated with the families of the victims. If you are a family member and wish for these materials to be removed, please email us at <a href="mailto:hello@fromustoamerica.com">hello@fromustoamerica.com</a> and we will comply immediately.</p>
+        </div>
     </footer>
 </div>
 
