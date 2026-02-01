@@ -1,17 +1,225 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Libwave</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Us To America</title>
     <style>
-        body { font-family: monospace; padding: 50px; background: #f4f4f4; }
-        h1 { color: #333; }
-        .container { max-width: 600px; margin: 0 auto; }
+        body {
+            background-color: #ffffff;
+            color: #222;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 4rem 2rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* HEADER & INTRO */
+        h1 {
+            font-weight: 700;
+            font-size: 2.2rem;
+            letter-spacing: -0.03rem;
+            margin-bottom: 1.5rem;
+            color: #111;
+            line-height: 1.1;
+            margin-top: 0;
+        }
+        .intro-text p {
+            font-size: 1.15rem;
+            color: #333;
+            margin-bottom: 1rem;
+            max-width: 650px; 
+        }
+
+        /* BILL OF LADING GRID */
+        .bill-of-lading {
+            display: grid;
+            grid-template-columns: 2fr 1fr; 
+            gap: 2rem;
+            align-items: center; 
+            margin-top: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        /* The List */
+        .manifest {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            gap: 0.8rem 1.5rem;
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+            font-size: 1.05rem;
+            color: #111;
+            font-weight: 500;
+        }
+        .manifest li {
+            position: relative;
+            padding-left: 1.2rem;
+            border-bottom: 1px solid #f9f9f9;
+        }
+        .manifest li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #bbb;
+        }
+
+        /* The Parcel Column */
+        .parcel-col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .parcel-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            transform: rotate(1deg); 
+        }
+        .signature {
+            font-weight: 700;
+            font-size: 1rem;
+            color: #000;
+            display: inline-block;
+            border-bottom: 2px solid #000;
+            line-height: 1.2;
+            font-style: italic;
+        }
+
+        /* MOBILE RESPONSIVENESS */
+        @media (max-width: 700px) {
+            .bill-of-lading {
+                grid-template-columns: 1fr; 
+                gap: 2rem;
+            }
+            .manifest {
+                grid-template-columns: 1fr; 
+            }
+            .parcel-col {
+                order: 2; 
+                max-width: 300px;
+                margin: 0 auto;
+            }
+        }
+
+        /* LOWER SECTIONS */
+        h2 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05rem;
+            color: #555;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+        .note {
+            background: #f9f9f9;
+            padding: 1rem 1.5rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: #444;
+            margin-bottom: 2rem;
+        }
+        .request-box {
+            border: 1px solid #000;
+            padding: 1.5rem;
+            border-radius: 6px;
+            background: #fffafa; 
+        }
+        .button {
+            display: inline-block;
+            background: #222;
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.2s;
+            font-size: 0.95rem;
+        }
+        .button:hover { opacity: 0.8; }
+        .cta-link {
+            color: #d00;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .cta-link:hover { text-decoration: underline; }
+        footer {
+            margin-top: 4rem;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 2rem;
+            font-size: 0.9rem;
+            color: #999;
+        }
+        footer a { color: #999; text-decoration: none; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Libwave Operations</h1>
-        <hr>
+
+<div class="container">
+    
+    <h1>This is the American experiment.</h1>
+
+    <div class="intro-text">
+        <p>The situation in this country is volatile. Things are happening with ICE and the hard right that are genuinely disturbing, and the solution isn't clear.</p>
+        <p>But when you don't know the answer, you experiment. Uncertainty is a chance for discovery.</p>
+        <p>This is a place to share what we learn. It is time to ship the future.</p>
     </div>
+
+    <div class="bill-of-lading">
+        <ul class="manifest">
+            <li>Broad prosperity</li>
+            <li>Abundant housing</li>
+            <li>Safe neighborhoods</li>
+            <li>Pathways to citizenship</li>
+            <li>Competent government</li>
+            <li>Equal justice</li>
+            <li>Clean, cheap energy</li>
+            <li>Free-range kids</li>
+            <li>Scientific leadership</li>
+            <li>Honest debate</li>
+        </ul>
+
+        <div class="parcel-col">
+            <img src="static/assets/misc/from_us_to_america_package.png" alt="A package sealed with American flag tape" class="parcel-img">
+            <div class="signature">From us, to America.</div>
+        </div>
+    </div>
+    
+    <div class="note">
+        <strong>A Note on this Project:</strong><br>
+        This site is a personal, volunteer effort, built on nights and weekends. It is not funded by a PAC, an NGO, or a foreign government. We are doing this because we live here.
+    </div>
+
+    <h2>1. Home of the brave</h2>
+    <p>High-resolution, open-source graphic tributes to commemorate Alex Pretti and Renée Good. Download the files, print them as stickers or signs, and use them immediately.</p>
+    <a href="stickers.html" class="button">Access Sticker Files &rarr;</a>
+
+    <h2>2. The missing pieces</h2>
+    <div class="request-box">
+        <p><strong>We need design help.</strong></p>
+        <p>We want to honor <strong>Keith Porter</strong> and <strong>Parady La</strong> with the same dignity we gave to <strong>Renée Good</strong> and <strong>Alex Pretti</strong>.</p>
+        <p>To be honest, we hit the limit of our graphic design skills with the first two. We don't want to release subpar tributes. If you have an eye for design, please help us complete the set.</p>
+        <p>
+            <a href="mailto:hello@fromustoamerica.com?subject=Design%20Help" class="cta-link">Email hello@FromUsToAmerica.com if you can help.</a>
+        </p>
+    </div>
+
+    <footer>
+        &copy; 2026 From Us To America. <a href="https://github.com/libwave-ops">Source</a>.
+    </footer>
+</div>
+
 </body>
 </html>

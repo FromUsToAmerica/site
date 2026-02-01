@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materials | From Us To America</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #222;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 4rem 2rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* NAVIGATION */
+        .nav-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #666;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        .nav-link:hover { text-decoration: underline; color: #111; }
+
+        /* HEADER */
+        h1 {
+            font-weight: 700;
+            font-size: 2.2rem;
+            letter-spacing: -0.03rem;
+            margin-bottom: 1rem;
+            color: #111;
+            line-height: 1.1;
+            margin-top: 0;
+        }
+        .intro-text {
+            font-size: 1.15rem;
+            color: #333;
+            margin-bottom: 3rem;
+            max-width: 650px; 
+        }
+
+        /* STICKER GRID */
+        .sticker-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        .sticker-card {
+            border: 1px solid #eee;
+            border-radius: 6px;
+            padding: 1.5rem;
+            text-align: center;
+            background: #fffafa;
+            transition: transform 0.2s ease;
+        }
+        
+        .preview-img {
+            width: 100%;
+            height: auto;
+            max-width: 250px;
+            margin-bottom: 1.5rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1)); 
+        }
+
+        .sticker-name {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .sticker-meta {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        /* BUTTON GROUP */
+        .btn-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+        }
+        .download-btn {
+            display: inline-block;
+            background: #222;
+            color: #fff;
+            padding: 10px 0; /* Centered text */
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+        .download-btn.secondary {
+            background: #fff;
+            color: #222;
+            border: 1px solid #ccc;
+        }
+        .download-btn:hover { opacity: 0.8; }
+        .download-btn.secondary:hover { background: #f0f0f0; }
+
+        /* INSTRUCTIONS */
+        h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05rem;
+            color: #555;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+        .instruction-list {
+            list-style: decimal;
+            padding-left: 1.2rem;
+            color: #333;
+        }
+        .instruction-list li {
+            margin-bottom: 1rem;
+        }
+        .instruction-list strong {
+            font-weight: 600;
+            color: #000;
+        }
+
+        /* MOBILE RESPONSIVE */
+        @media (max-width: 600px) {
+            .sticker-grid {
+                grid-template-columns: 1fr; 
+            }
+        }
+
+        footer {
+            margin-top: 4rem;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 2rem;
+            font-size: 0.9rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <a href="index.html" class="nav-link">&larr; Back to Home</a>
+
+    <h1>Home of the brave.</h1>
+    <div class="intro-text">
+        <p>In memory of our fallen Minneapolis neighbors, <strong>Renée Good</strong> and <strong>Alex Pretti</strong>.</p>
+        <p>These files are public domain. We have provided both standard image files (PNG) for online use and print-ready documents (PDF) for physical production.</p>
+    </div>
+
+    <div class="sticker-grid">
+        
+        <div class="sticker-card">
+            <img src="static/assets/stickers/renee_good_4x4_round.png" alt="Renée Good Sticker Preview" class="preview-img">
+            <span class="sticker-name">Renée Good</span>
+            <span class="sticker-meta">4" x 4" Circle Cut</span>
+            <div class="btn-group">
+                <a href="static/assets/stickers/renee_good_4x4_round.png" download class="download-btn">PNG</a>
+                <a href="static/assets/stickers/renee_good_4x4_round.pdf" download class="download-btn secondary">PDF</a>
+            </div>
+        </div>
+
+        <div class="sticker-card">
+            <img src="static/assets/stickers/alex_pretti_4x4_round.png" alt="Alex Pretti Sticker Preview" class="preview-img">
+            <span class="sticker-name">Alex Pretti</span>
+            <span class="sticker-meta">4" x 4" Square Cut</span>
+            <div class="btn-group">
+                <a href="static/assets/stickers/alex_pretti_4x4_round.png" download class="download-btn">PNG</a>
+                <a href="static/assets/stickers/alex_pretti_4x4_round.pdf" download class="download-btn secondary">PDF</a>
+            </div>
+        </div>
+
+    </div>
+
+    <h2>How to get these printed</h2>
+    <ul class="instruction-list">
+        <li>
+            <strong>Support a local print shop (Recommended).</strong><br>
+            Download the <strong>PDF</strong> version. Put it on a thumb drive or email it to a local independent print shop. This builds relationships in your community. Ask for "vinyl die-cut stickers."
+        </li>
+        <li>
+            <strong>Order online.</strong><br>
+            Download the <strong>PNG</strong> version. Upload it to a service like <a href="https://stickerapp.com" target="_blank" style="color:#222; text-decoration: underline;">StickerApp</a>. They handle the cutting and shipping.
+        </li>
+        <li>
+            <strong>Print at home.</strong><br>
+            If you have a color printer, buy "Avery 8.5x11 Full Sheet Label Paper." Use the PDF, but ensure your printer settings are set to <strong>"Scale: 100%"</strong> (Do not select "Fit to Page"). You will likely fit 2-4 stickers per page if you arrange them in a document editor first.
+        </li>
+    </ul>
+
+    <footer>
+        &copy; 2026 From Us To America.
+    </footer>
+</div>
+
+</body>
+</html>
